@@ -52,13 +52,13 @@ def downloadLRC(url, l_id):
         lrcf.close()
 
 def downloadPic(url,p_id):
-    
+    pass
 
 
 def main():
     url = "http://music.163.com/song/media/outer/url?id=167937.mp3"
     url2 = "http://music.163.com/api/song/lyric?os=web&id=1234567&lv=-1&kv=-1&tv=-1"
-    # downloadMusic(url)
-    downloadLRC(url2, "1234567")
+    downloadMusic(url)
+    # downloadLRC(url2, "1234567")
 
 main()
