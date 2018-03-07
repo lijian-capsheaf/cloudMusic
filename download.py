@@ -23,8 +23,6 @@ import os
 URL_MUSIC = "http://music.163.com/song/media/outer/url?id=%s.mp3"
 # %s is lyric id
 URL_LYRIC = "http://music.163.com/api/song/lyric?os=web&id=%s&lv=-1&kv=-1&tv=-1"
-# %s is picture id
-URL_PICTURE = ""
 
 
 # default path
