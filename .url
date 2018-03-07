@@ -1,0 +1,7 @@
+# This file is very important for you, so don't do anything to change it or delete it.
+# if you do, your application may stop to work.
+
+URL_SEARCH="http://s.music.163.com/search/get/?%s"
+URL_MUSIC="http://music.163.com/song/media/outer/url?id=%s.mp3"
+URL_LYRIC="http://music.163.com/api/song/lyric?%s"
+
