@@ -22,6 +22,8 @@ import json
 import os
 from optparse import OptionParser
 
+from search import SearchMusicFromNet as searchinfo
+
 # %s is music id
 URL_MUSIC = "http://music.163.com/song/media/outer/url?id=%s.mp3"
 # %s is lyric id
@@ -84,24 +86,31 @@ def download(id = "", mode = "", ):
     opt.add_option("-m", "--music",
                    action="store",
                    dest="mname",
+                   deault=""
                    help="download music")
     
     opt.add_option("-l", "--lyric",
                    action="store",
                    dest="lname",
+                   default=""
                    help="download lyric")
 
     opt.add_option("-p", "--picture",
                    action="dtore",
                    dest="pname",
+                   default=""
                    help="download picture")
+
     opt.add_option("setMusicUrl",
                    action="store"
                    dest="setMU",
+                   default=""
                    help="set music download url")
+
     opt.add_option("setLyricUrl",
                    action="store"
                    dest="setLU",
+                   default=""
                    help="set lyric download url")
 
     (option, args) = opt.parse_args()
@@ -112,9 +121,27 @@ def download(id = "", mode = "", ):
         printVersion(__PROGRAM__)
         return
     # download all
-    if option.all
+    if option.all:
+        # do some other
+        pass
+        return 
+    # downliad music
+    if option.mname != "":
+        result = searchinfo(option,name)[0]
+        downloadMusic(result[0])
 
+    else:
+        print "No music name"
 
+    if option.lname != "":
+        
+    else:
+        print "No lyric name"
+
+    if option.pname != "":
+        
+    else:
+        print "No picture name"
 
 __all__ =["download"]
 
