@@ -42,3 +42,12 @@ def setConf(flag = []):
 def readUrl(flag = []):
     pass
 
+# set url to file
+def write(flag = {}):
+    pass
+
+# get versioninfo
+def printVersion(program_name = ""):
+    pass
+
+
